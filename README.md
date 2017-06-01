@@ -1,0 +1,3 @@
+# textDemo
+这只是一个测试retrofit网络框架的demo
+MainActivity是简单的GET请求，无参数，TwoActivity是POST请求 单传一张照片
