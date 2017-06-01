@@ -3,7 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera/camera.iml" filepath="$PROJECT_DIR$/camera/camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docx/docx.iml" filepath="$PROJECT_DIR$/docx/docx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freemarker/freemarker.iml" filepath="$PROJECT_DIR$/freemarker/freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htmltopicture/htmltopicture.iml" filepath="$PROJECT_DIR$/htmltopicture/htmltopicture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signature/signature.iml" filepath="$PROJECT_DIR$/signature/signature.iml" />
       <module fileurl="file://$PROJECT_DIR$/textDemo.iml" filepath="$PROJECT_DIR$/textDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tohtml/tohtml.iml" filepath="$PROJECT_DIR$/tohtml/tohtml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordDemo/wordDemo.iml" filepath="$PROJECT_DIR$/wordDemo/wordDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordpicdemo/wordpicdemo.iml" filepath="$PROJECT_DIR$/wordpicdemo/wordpicdemo.iml" />
     </modules>
   </component>
 </project>

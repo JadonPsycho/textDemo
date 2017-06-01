@@ -1,0 +1,10 @@
+table {
+       border: 1px solid blue;
+       width: 800px;
+       height: 500px;
+       text-align: center;
+}
+td {
+       width: 200px;
+       border: 1px solid blue;
+}

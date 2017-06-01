@@ -10,6 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/camera" />
+            <option value="$PROJECT_DIR$/docx" />
+            <option value="$PROJECT_DIR$/freemarker" />
+            <option value="$PROJECT_DIR$/htmltopicture" />
+            <option value="$PROJECT_DIR$/signature" />
+            <option value="$PROJECT_DIR$/tohtml" />
+            <option value="$PROJECT_DIR$/wordDemo" />
+            <option value="$PROJECT_DIR$/wordpicdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

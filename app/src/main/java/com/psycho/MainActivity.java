@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.orhanobut.logger.Logger;
+import com.psycho.jump.JumpActivity;
+import com.psycho.recycle.RecycleListActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     TextView btnNext;
     @Bind(R.id.activity_main)
     RelativeLayout activityMain;
+    @Bind(R.id.btn_list)
+    TextView btnList;
 
     private SharedPreferences sp;
 
@@ -50,40 +54,50 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.btn_next, R.id.btn})
+    @OnClick({R.id.btn_next, R.id.btn,R.id.btn_list})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_next:
-                Intent intent = new Intent(MainActivity.this,TwoActivity.class);
+                Intent intent = new Intent(MainActivity.this, TwoActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn:
-                Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://beadhouse.nbxuanma.com/api/")
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build();
-                ApiService api = retrofit.create(ApiService.class);
+//                Retrofit retrofit = new Retrofit.Builder()
+//                        .baseUrl("http://beadhouse.nbxuanma.com/api/")
+//                        .addConverterFactory(GsonConverterFactory.create())
+//                        .build();
+//                ApiService api = retrofit.create(ApiService.class);
+//
+//                Call<InfoResponse> call = api.info();
+//                call.enqueue(new Callback<InfoResponse>() {
+//                    @Override
+//                    public void onResponse(Call<InfoResponse> call, Response<InfoResponse> response) {
+//                        final InfoResponse entity = response.body();
+//                        Logger.json(new Gson().toJson(entity));
+//                        runOnUiThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                txt.setText(entity.getResult().get(0).getName());
+//                            }
+//                        });
+//                    }
+//
+//                    @Override
+//                    public void onFailure(Call<InfoResponse> call, Throwable t) {
+//                        Logger.e(t, t.getMessage());
+//                    }
+//                });
 
-                Call<InfoResponse> call = api.info();
-                call.enqueue(new Callback<InfoResponse>() {
-                    @Override
-                    public void onResponse(Call<InfoResponse> call, Response<InfoResponse> response) {
-                        final InfoResponse entity = response.body();
-                        Logger.json(new Gson().toJson(entity));
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                txt.setText(entity.getResult().get(0).getName());
-                            }
-                        });
-                    }
+                Intent intent2 = new Intent(this, JumpActivity.class);
+                startActivity(intent2);
 
-                    @Override
-                    public void onFailure(Call<InfoResponse> call, Throwable t) {
-                        Logger.e(t, t.getMessage());
-                    }
-                });
+                break;
+            case R.id.btn_list:
+                Intent intent1 = new Intent(this, RecycleListActivity.class);
+                startActivity(intent1);
                 break;
         }
     }
+
+
 }
